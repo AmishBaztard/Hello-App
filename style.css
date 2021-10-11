@@ -1,0 +1,91 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* =============================
+GLOBAL SETUP
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(78, 78, 78);
+}
+h1 {
+  font-size: 1.75rem;
+}
+
+/* Block component */
+.container {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  max-width: 800px;
+  background-color: #000;
+  margin: 4rem auto 0 auto;
+  border: 1px solid #ccc;
+}
+.banner {
+  background: url('https://images.unsplash.com/photo-1604351888999-9ea0a2851e61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80');
+  flex: 50%;
+}
+.login {
+  background: #fff;
+  flex: 50%;
+  padding: 2rem;
+  text-align: center;
+}
+.field {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.625rem;
+  margin: 1rem 0 0 0;
+}
+.field:focus {
+  outline: none;
+}
+.btn {
+  display: block;
+  background: rgb(68, 116, 219);
+  border-radius: 4px;
+  border: none;
+  padding: 0.75rem 4.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(27, 84, 209);
+}
+
+/* Block Elements */
+.login__message {
+  padding: 1rem;
+  margin: 4rem auto;
+}
+.login__button {
+  margin: 2rem auto 0 auto;
+}
+.logout__button {
+  display: none;
+  margin: 2rem auto 0 auto;
+}
+/* Modifiers */
+.field--error {
+  border-color: red;
+}
+.btn--red {
+  background-color: rgb(206, 24, 0);
+}
+.btn--red:hover {
+  background-color: rgb(134, 17, 1);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Hello App</title>
+</head>
+<body>
+  <main class="container">
+    <section class="banner"></section>
+    <section class="login">
+      <h1>Login</h2>
+      <form id="loginForm">
+        <input class="field" type="text" name="username" placeholder="Username" />
+        <input class="field" type="password" name="password" placeholder="Password" />
+
+        <input id="loginButton" class="login__button btn" type="button" value="Login" />
+        <input id="logoutButton" class="btn btn--red logout__button" type="button" value="Logout" />
+      </form>
+      <div class="login__message"></div>
+    </section>
+  </main>
+  <script src="./dist/main.js" type="module"></script>
+</body>
+</html>
