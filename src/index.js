@@ -51,9 +51,9 @@ const handleLogin = async () => {
   const userVal = loginForm.username.value;
   loggedInUsername = userVal;
 
-  loggedInIP = await fetch('http://ip-api.com/json/')
+  loggedInIP = await fetch('https://api.ipify.org?format=json')
     .then((response) => response.json())
-    .then((json) => json.query);
+    .then((json) => json.ip);
 
   const helloResponse = await fetch(`https://fourtonfish.com/hellosalut/?ip=${loggedInIP}`)
     .then((response) => response.json())
